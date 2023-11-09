@@ -31,7 +31,7 @@ const Footer = () => {
             <Link href="#"> FAQs</Link>
           </FooterList>
 
-          <div className="w-full md:w-1/3 mb-0">
+          <div className="w-full md:w-1/3">
             <h3 className="text-base font-bold mb-2">About Us</h3>
             <p className="mb-2">
               {" "}
@@ -45,7 +45,7 @@ const Footer = () => {
           </div>
 
           <FooterList>
-            <h3 className="text-base font-bold mb-2">Follow Us</h3>
+            <h3 className="text-base font-bold mt-4 mb-2">Follow Us</h3>
             <div className="flex gap-2">
               <Link href="#">
                 <MdFacebook size={24} />
