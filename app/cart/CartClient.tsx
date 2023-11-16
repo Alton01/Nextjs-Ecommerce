@@ -35,9 +35,11 @@ const CartClient: React.FC<CartClientProps> = ({ currentUser }) => {
   return (
     <div>
       <Heading title="Shopping Cart" center />
-      <div className="grid grid-cols-5 text-xs gap-4 pb-2 items-center mt-8">
-        <div className="col-span-2 justify-self-start">PRODUCT</div>
-        <div className="justify-self-center">PRICE</div>
+      <div className="grid grid-cols-3 sm:grid-cols-5 text-xs gap-4 pb-2 items-center mt-8">
+        <div className="col-span-1 sm:col-span-2 justify-self-start">
+          PRODUCT
+        </div>
+        <div className="justify-self-center hidden sm:block ">PRICE</div>
         <div className="justify-self-center">QUANTITY</div>
         <div className="justify-self-end">TOTAL</div>
       </div>
