@@ -24,7 +24,7 @@ interface ManageOrdersClientProps {
 }
 
 type ExtendedOrder = Order & {
-  user: User;
+  // user: User;
 };
 
 const ManageOrdersClient: React.FC<ManageOrdersClientProps> = ({ orders }) => {
@@ -34,7 +34,7 @@ const ManageOrdersClient: React.FC<ManageOrdersClientProps> = ({ orders }) => {
     rows = orders.map((order) => {
       return {
         id: order.id,
-        customer: order.user.name,
+        //  customer: order.user.name,
         amount: formatPrice(order.amount / 100),
         paymentStatus: order.status,
         date: moment(order.createdDate).fromNow(),
@@ -45,7 +45,7 @@ const ManageOrdersClient: React.FC<ManageOrdersClientProps> = ({ orders }) => {
 
   const columns: GridColDef[] = [
     { field: "id", headerName: "ID", width: 150 },
-    { field: "customer", headerName: "Customer Name", width: 150 },
+    //  { field: "customer", headerName: "Customer Name", width: 150 },
     {
       field: "amount",
       headerName: "Amount(USD)",

@@ -70,7 +70,7 @@ const CheckoutForm: React.FC<CheckoutFormProps> = ({
       <div className="mb-6">
         <Heading title="Enter Your Details To Complete Checkout" />
       </div>
-      <h2 className="font-semibold mb-2"></h2>
+      <h2 className="font-semibold mb-2">Payment Information</h2>
       <AddressElement
         options={{
           mode: "shipping",
@@ -80,7 +80,7 @@ const CheckoutForm: React.FC<CheckoutFormProps> = ({
       <h2 className="font-semibold mt-4 mb-2">Payment Information</h2>
       <PaymentElement id="payment-element" options={{ layout: "tabs" }} />
       <div className="py-4 text-center text-slate-700 text-xl font-bold">
-        total: {formattedPrice}
+        Total: {formattedPrice}
       </div>
       <Button
         label={isLoading ? "Processing" : "Pay Now"}

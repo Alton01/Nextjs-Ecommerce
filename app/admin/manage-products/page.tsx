@@ -9,7 +9,7 @@ const ManageProducts = async () => {
   const currentUser = await getCurrentUser();
 
   if (!currentUser || currentUser.role !== "ADMIN") {
-    return <NullData title="OOPS! Access Denied" />;
+    return <NullData title="OOPS!! YOU ARE NOT ADMIN!! ACCESS DENIED" />;
   }
 
   return (

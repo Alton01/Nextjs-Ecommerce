@@ -61,7 +61,7 @@ const AddRating: React.FC<AddRatingProps> = ({ product, user }) => {
       .then(() => {
         toast.success("Rating Submitted");
         router.refresh();
-        reset;
+        reset();
       })
       .catch((error) => {
         toast.error("Something went wrong");

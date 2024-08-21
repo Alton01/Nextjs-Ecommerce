@@ -13,7 +13,7 @@ import { getCurrentUser } from '@/actions/getCurrentUser';
         const totalPrice = items.reduce((acc, item) => {
             const itemTotal = item.price * item.quantity
 
-            return acc = itemTotal;
+            return acc + itemTotal;
         }, 0);
 
         const price: any = Math.floor(totalPrice);

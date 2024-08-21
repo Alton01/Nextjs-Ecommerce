@@ -24,7 +24,10 @@ const CartClient: React.FC<CartClientProps> = ({ currentUser }) => {
       <div className="flex flex-col items-center">
         <div className="text-2xl">Your Cart Is Empty</div>
         <div>
-          <Link href={"/"} className="text-slate-500 flex gap-1 mt-2">
+          <Link
+            href={"/"}
+            className="text-slate-500 flex items-center gap-1 mt-2"
+          >
             <MdArrowBack />
             <span>Start Shopping</span>
           </Link>
@@ -49,7 +52,7 @@ const CartClient: React.FC<CartClientProps> = ({ currentUser }) => {
             return <ItemContent key={item.id} item={item} />;
           })}
       </div>
-      <div className="border-t[1.5px] border-slate-200 py-4 flex justify-between gap-4">
+      <div className="border-t-[1.5px] border-slate-200 py-4 flex justify-between gap-4">
         <div className="w-[90px]">
           <Button
             label="Clear Cart"

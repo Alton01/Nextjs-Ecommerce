@@ -16,7 +16,7 @@ const Category: React.FC<CategoryProps> = ({ label, icon: Icon, selected }) => {
   const router = useRouter();
   const params = useSearchParams();
 
-  //THIS IS USED TO CHANGETHECLASS OF PRODUCTS DISPLAYED WHEN A CATEGORY IS CLICKED
+  //THIS IS USED TO CHANGE THE CLASS OF PRODUCTS DISPLAYED WHEN A CATEGORY IS CLICKED
   // IN ORDER TO FETCH PRODUCTS THAT BELONG TO THAT CATEGORY.
 
   const handleClick = useCallback(() => {
